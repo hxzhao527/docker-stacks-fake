@@ -10,7 +10,6 @@ RUN apk add git vim curl wget unzip xz fontconfig perl &&\
     tar xzf pandoc-2.2.1-linux.tar.gz &&\
     cp pandoc-2.2.1/bin/pandoc* /usr/bin/ &&\
     cd /ext &&\
-    wget https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz &&\
     tar xzf install-tl-unx.tar.gz &&\
     cd install-tl-20180614/ &&\
     ./install-tl -profile /ext/texlive.profile &&\
