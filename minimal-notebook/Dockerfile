@@ -2,7 +2,7 @@ FROM hxzhao527/docker-stacks-fake:base
 
 LABEL maintainer="hxzhao <haoxiangzhao@outlook.com>"
 
-ADD minimal-notebook/_inside/ /ext/
+ADD _inside/ /ext/
 
 RUN apk add git vim curl wget unzip xz fontconfig perl &&\
     cd /ext &&\
@@ -14,7 +14,7 @@ RUN apk add git vim curl wget unzip xz fontconfig perl &&\
     cd install-tl-20180614/ &&\
     ./install-tl -profile /ext/texlive.profile &&\
     export PATH=$PATH:/usr/local/texlive/2018/bin/x86_64-linuxmusl/ &&\
-    tlmgr install adjustbox collectbox ucs &&\
+    tlmgr install adjustbox collectbox ucs enumitem &&\
     cd / &&\
-    rm -r /ext &&\
+    rm -r /ext
 ENV PATH="$PATH:/usr/local/texlive/2018/bin/x86_64-linuxmusl/"
