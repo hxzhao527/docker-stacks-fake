@@ -11,10 +11,9 @@ RUN apk add git vim curl wget unzip xz fontconfig perl &&\
     cp pandoc-2.2.1/bin/pandoc* /usr/bin/ &&\
     cd /ext &&\
     tar xzf install-tl-unx.tar.gz &&\
-    cd install-tl-20180614/ &&\
-    ./install-tl -profile /ext/texlive.profile &&\
+    install-tl-20*/install-tl -profile /ext/texlive.profile &&\
     export PATH=$PATH:/usr/local/texlive/2018/bin/x86_64-linuxmusl/ &&\
-    tlmgr install adjustbox collectbox ucs enumitem &&\
+    tlmgr install adjustbox collectbox ucs enumitem collection-fontsrecommended &&\
     cd / &&\
     rm -r /ext
 ENV PATH="$PATH:/usr/local/texlive/2018/bin/x86_64-linuxmusl/"

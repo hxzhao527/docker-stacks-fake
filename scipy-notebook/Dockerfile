@@ -1,4 +1,4 @@
-FROM hxzhao527/docker-stacks-fake:base
+FROM hxzhao527/docker-stacks-fake:minimal
 
 LABEL maintainer="hxzhao <haoxiangzhao@outlook.com>"
 
