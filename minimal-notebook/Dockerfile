@@ -4,7 +4,7 @@ LABEL maintainer="hxzhao <haoxiangzhao@outlook.com>"
 
 ADD _inside/ /ext/
 
-RUN apk add git vim curl wget unzip xz fontconfig perl &&\
+RUN apk add --no-cache git vim curl wget unzip xz fontconfig perl &&\
     cd /ext &&\
     wget https://github.com/jgm/pandoc/releases/download/2.2.1/pandoc-2.2.1-linux.tar.gz &&\
     tar xzf pandoc-2.2.1-linux.tar.gz &&\

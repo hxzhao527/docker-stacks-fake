@@ -14,11 +14,9 @@ docker pull hxzhao527/docker-stacks-fake:base
 ## Use
 First start one container from image
 ```
-docker run --name base_notebook_web -p 12346:8888 -d hxzhao527/docker-stacks-fake:base
+docker run --name base_notebook_web -p 12346:8888 -d --init hxzhao527/docker-stacks-fake:base
 ```
-Use 
+The default password is ```hxzhao527```, you can use env to reset it, like
 ```
-docker logs base_notebook_web
-``` 
-to get token for login notebook.
-
+docker run --name base_notebook_web -p 12346:8888 -d --init -e PASSWORD=ilovepython hxzhao527/docker-stacks-fake:base
+```
