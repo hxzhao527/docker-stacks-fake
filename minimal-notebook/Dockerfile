@@ -14,7 +14,7 @@ RUN apk add --no-cache git vim curl wget unzip xz fontconfig perl &&\
     tar xzf install-tl-unx.tar.gz &&\
     install-tl-20*/install-tl --profile /tmp/notebook/texlive.profile --repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet/ &&\
     export PATH=$PATH:/usr/local/texlive/2018/bin/x86_64-linuxmusl/ &&\
-    tlmgr install collection-xetex adjustbox collectbox ucs enumitem collection-fontsrecommended &&\
+    tlmgr install adjustbox collectbox ucs enumitem collection-fontsrecommended &&\
     cd / &&\
     rm -r /tmp/notebook
 ENV PATH="$PATH:/usr/local/texlive/2018/bin/x86_64-linuxmusl/"

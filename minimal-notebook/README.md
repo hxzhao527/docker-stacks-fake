@@ -9,4 +9,4 @@ As you see, this image size is increasing rapidly. [texlive](https://www.tug.org
 
 In my opinion, ```Save as PDF``` is not necessary. If you want to share your code, ```ipnb``` is enough, or save image draw in notebook, just right-click to save. 
 
-So if you don't need this, just change ```Dockerfile```.
+So if you don't need this, just change ```Dockerfile``` build on this.
