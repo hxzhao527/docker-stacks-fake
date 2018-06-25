@@ -1,7 +1,7 @@
-# texlive.profile written on Fri Jun 15 09:25:40 2018 UTC
+# texlive.profile written on Mon Jun 25 06:09:45 2018 UTC
 # It will NOT be updated and reflects only the
 # installation profile at installation time.
-selected_scheme scheme-small
+selected_scheme scheme-minimal
 TEXDIR /usr/local/texlive/2018
 TEXMFCONFIG ~/.texlive2018/texmf-config
 TEXMFHOME ~/texmf
@@ -9,7 +9,7 @@ TEXMFLOCAL /usr/local/texlive/texmf-local
 TEXMFSYSCONFIG /usr/local/texlive/2018/texmf-config
 TEXMFSYSVAR /usr/local/texlive/2018/texmf-var
 TEXMFVAR ~/.texlive2018/texmf-var
-binary_x86_64-linux 1
+binary_x86_64-linuxmusl 1
 instopt_adjustpath 0
 instopt_adjustrepo 1
 instopt_letter 0
